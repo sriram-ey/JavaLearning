@@ -9,30 +9,30 @@ public class ThreadResourceManagement {
 		ExecutorService es = Executors.newFixedThreadPool(2);
 
 		es.execute(() -> {
-			LapTop laptop = EYOffice.getLapTopFromLockerRoom("ramu");
+			LapTop laptop = Office.getLapTopFromLockerRoom("ramu");
 
-			LapTop laptop2 = EYOffice.getLapTopFromLockerRoom("ramu");
-			EYOffice.getLapTopFromLockerRoom("ramu");
-			EYOffice.getLapTopFromLockerRoom("ramu");
-			EYOffice.getLapTopFromLockerRoom("ramu");
-			EYOffice.getLapTopFromLockerRoom("ramu");
+			LapTop laptop2 = Office.getLapTopFromLockerRoom("ramu");
+			Office.getLapTopFromLockerRoom("ramu");
+			Office.getLapTopFromLockerRoom("ramu");
+			Office.getLapTopFromLockerRoom("ramu");
+			Office.getLapTopFromLockerRoom("ramu");
 
-			EYOffice.closeMyLapTop();
+			Office.closeMyLapTop();
 
-			EYOffice.getLapTopFromLockerRoom("ramu");
+			Office.getLapTopFromLockerRoom("ramu");
 		});
 		es.execute(() -> {
-			LapTop laptop11 = EYOffice.getLapTopFromLockerRoom("somu");
-			EYOffice.getLapTopFromLockerRoom("somu");
-			EYOffice.getLapTopFromLockerRoom("somu");
-			EYOffice.getLapTopFromLockerRoom("somu");
-			EYOffice.getLapTopFromLockerRoom("somu");
+			LapTop laptop11 = Office.getLapTopFromLockerRoom("somu");
+			Office.getLapTopFromLockerRoom("somu");
+			Office.getLapTopFromLockerRoom("somu");
+			Office.getLapTopFromLockerRoom("somu");
+			Office.getLapTopFromLockerRoom("somu");
 		});
 		es.shutdown();
 	}
 }
 
-class EYOffice {
+class Office {
 	private static ThreadLocal locker = new ThreadLocal();
 
 	public static LapTop getLapTopFromLockerRoom(String name) {
