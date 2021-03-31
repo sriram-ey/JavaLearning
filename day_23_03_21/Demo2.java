@@ -29,7 +29,7 @@ public class Demo2 extends HttpServlet {
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/ey", "root", "root");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/<dbname>", "<username>", "<password>");
 			
 			
 			String query = "select * from user_info where uname = ?";
