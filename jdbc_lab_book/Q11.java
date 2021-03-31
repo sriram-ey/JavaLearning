@@ -7,7 +7,7 @@ public class Q11 {
 	public static void main(String st1[]) throws Exception {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost/ey", "root", "<password>");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/<dbname>", "<username>", "<password>");
 
 		Enumeration e = DriverManager.getDrivers();
 		System.out.println("time taken for login " + DriverManager.getLoginTimeout());
