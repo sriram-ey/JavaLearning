@@ -7,7 +7,7 @@ public class Q4 {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/ey", "root", "<password>");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/<dbname>", "<username>", "<password>");
 
 			Statement st = con.createStatement();
 
