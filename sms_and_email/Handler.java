@@ -3,8 +3,8 @@ package sms_and_email;
 public class Handler {
 	public static void main(String[] args) throws Exception {
 
-		String pdfFilePath = "C:\\Users\\AW126XW\\eclipse-workspace\\EY_Learing\\sax_output.pdf";
-		String xmlFilePath = "C:\\Users\\AW126XW\\eclipse-workspace\\EY_Learing\\src\\sms_and_email\\invoice.xml";
+		String pdfFilePath = "<path>";
+		String xmlFilePath = "<path>";
 		// Sending Email
 		Sender sendemail = Container.getSendEmail();
 		sendemail.doSend(pdfFilePath);
