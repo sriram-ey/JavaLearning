@@ -10,9 +10,9 @@ import java.util.concurrent.Executors;
 public class ObserverDemo {
 	public static void main(String[] args) {
 		FireAlarm shakthi = new FireAlarm();
-		Student ey = new Student();
+		Student stud = new Student();
 		Teacher shoiab = new Teacher();
-		shakthi.addObserver(ey);
+		shakthi.addObserver(stud);
 		shakthi.addObserver(shoiab);
 
 		shakthi.setAlarm();
