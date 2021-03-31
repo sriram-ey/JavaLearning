@@ -32,7 +32,7 @@ public class Demo3 extends HttpServlet {
 
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/ey", "root", "root");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/<dbname>", "<username>", "<password>");
 
 			String query = "insert into user_info values(?,?,?)";
 			PreparedStatement stmt = con.prepareStatement(query);
