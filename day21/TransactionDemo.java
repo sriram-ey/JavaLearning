@@ -9,7 +9,7 @@ public class TransactionDemo {
 	public static void main(String[] args) throws Exception {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		// step 2 - Establish a connection
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost/ey", "root", "root");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/<dbname>", "<username>", "<password>");
 
 		System.out.println(con);
 
