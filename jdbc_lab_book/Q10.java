@@ -7,7 +7,7 @@ public class Q10 {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/ey", "root", "<password>");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/<dbname>", "<username>", "<password>");
 
 			String query = "insert into users values (?,?,?,?)";
 			PreparedStatement st = con.prepareStatement(query);
