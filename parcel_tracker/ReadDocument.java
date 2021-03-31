@@ -30,7 +30,7 @@ public class ReadDocument implements Cloneable, Calculator {
 		Document jdomDoc;
 		try {
 			jdomDoc = (Document) builder
-					.build("C:\\Users\\AW126XW\\eclipse-workspace\\EY_Learing\\src\\parcel_tracker\\details.xml");
+					.build("<path>");
 			Element root = jdomDoc.getRootElement();
 			List<Element> listOfParcel = root.getChildren("parcel");
 			List<Parcel> parcelList = new ArrayList<>();
