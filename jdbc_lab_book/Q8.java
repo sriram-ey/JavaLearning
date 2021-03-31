@@ -6,7 +6,7 @@ public class Q8 {
 	public static void main(String str[]) throws Exception {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/coda3", "root", "<password>");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/<dbname>", "<username>", "<password>");
 			Statement st = con.createStatement();
 			st.executeUpdate("update  sam set name='iniah' where age=31");
 			st.executeUpdate("update  sam set name='uhdap' where age=41");
